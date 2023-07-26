@@ -1,125 +1,238 @@
-/* Estilo geral da página */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0; /* Light gray background */
-    margin: 0;
+    background-color: rgb(202, 247, 201); /* Light green background */
     padding: 0;
-  }
-  
-  /* Estilo do cabeçalho */
-  .header {
-    background-color: #4caf50; /* Green header background */
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    font-size: 24px;
-  }
-  
-  /* Estilo do conteúdo principal */
-  .content {
+    margin: 0;
+}
+
+.box {
+    width: 100%;
+    height: 100vh; /* Change to 100vh to fill the entire viewport */
     display: flex;
-    flex-wrap: wrap;
+    background-color: rgb(173, 243, 170); /* Light green box */
+    flex-direction: column;
+}
+
+.heater {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    color: #fff;
+    background-color: rgb(0, 128, 0); /* Dark green header background */
+    display: flex;
+    width: 100%;
+    height: 10vh; /* Reduce header height */
+    align-items: center;
     justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
-  }
-  
-  /* Estilo do formulário de cadastro */
-  .form-container {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    margin: 10px;
-    min-width: 300px;
-    max-width: 500px;
-  }
-  
-  .form-container h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .form-group label {
-    display: block;
-    font-size: 18px;
-    margin-bottom: 5px;
-    color: #666;
-  }
-  
-  .form-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  .form-group select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  .btn-container {
-    text-align: right;
-    margin-top: 20px;
-  }
-  
-  .btn {
-    padding: 10px 20px;
-    background-color: #4caf50; /* Green button background */
-    color: #fff;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh; /* Add some margin between header and content */
+}
+
+.conteudo-lado1 {
+    display: flex;
+    width: 60%; /* Increase width to accommodate content */
+    height: 90vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-lado2 {
+    display: flex;
+    width: 40%; /* Decrease width to accommodate content */
+    height: 90vh;
+    flex-direction: column;
+    align-items: center;
+    border: none; /* Remove border */
+}
+
+.tt-lado2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    color: rgb(0, 128, 0); /* Dark green title text color */
+}
+
+.btn {
+    border-radius: 15px;
+    width: 30%;
+    height: 8.5vh;
+    margin-top: 5vh;
+    color: black;
+    background-color: rgb(0, 128, 0); /* Dark green button background */
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .btn:hover {
-    background-color: #45a049; /* Darken the button on hover */
-  }
-  
-  /* Estilo da tabela de listagem de alunos */
-  .table-container {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    margin: 10px;
-    max-width: 100%;
-    overflow: auto;
-  }
-  
-  .table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    background-color: rgb(0, 100, 0); /* Darken the button on hover */
+    color: #fff;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 100, 0); /* Dark green footer background */
+    height: 10vh; /* Set a fixed height for the footer */
+}/* ///////////////////////////////////  lista aluno ////////////////////////////// */
+
+.table {
+    width: 90%;
+    height: auto;
+    margin-top: 5vh; /* Add margin to separate from the previous content */
+    background-color: rgb(191, 236, 191); /* Light green table background */
+}
+
+.td {
+    height: 10vh;
+}
+
+.item-id-td {
+    display: flex;
+    width: 7vh;
+    margin-left: 23px;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabela {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh; /* Add margin to separate from the previous content */
+}
+
+.btn-lista-aluno {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh; /* Add margin to separate from the table */
+}
+
+.btn-excluir,
+.btn-alterar {
+    background-color: rgb(214, 60, 60); /* Dark red for delete button */
+    color: #fff;
+    height: 4vh;
+    margin: 0 5px; /* Add some spacing between buttons */
+    border: none;
+}
+
+.btn-excluir:hover,
+.btn-alterar:hover {
+    background-color: rgb(255, 0, 0); /* Bright red on hover */
+}
+
+.btn-footer {
+    display: flex;
+    justify-content: flex-end;
     width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .table th,
-  .table td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .table th {
-    background-color: #4caf50; /* Green header background */
+    margin-left: -90px;
+    margin-top: 20px;
+    margin-bottom: 5vh; /* Add margin to separate from the footer */
+}
+
+.btn-footer-cadastrar {
+    width: 30vh;
+    height: 5vh;
+    margin-right: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(0, 128, 0); /* Dark green for the "Cadastrar" button */
     color: #fff;
-  }
-  
-  /* Estilo do rodapé */
-  .footer {
-    background-color: #4caf50; /* Green footer background */
+}
+
+.btn-footer-voltar {
+    width: 15vh;
+    height: 5vh;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(106, 90, 205); /* Dark slate blue for the "Voltar" button */
     color: #fff;
-    text-align: center;
-    padding: 10px;
-  }
-  
+}
+
+.btn-footer-cadastrar:hover,
+.btn-footer-voltar:hover {
+    background-color: rgb(0, 100, 0); /* Darken the buttons on hover */
+}
+
+/* /////////////////////////////////////////  cadastro aluno ///////////////////////////////// */
+
+.box-1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: rgb(191, 236, 191); /* Light green background */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario {
+    display: flex;
+    width: 40%;
+    height: 50%;
+    background-color: rgb(173, 243, 170); /* Light green form background */
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px 2px #000;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.cadastrar-1 {
+    width: 20vh;
+    margin-right: 0;
+    height: 4vh;
+    margin-right: 20vh;
+    margin-left: -60px;
+}
+
+.voltar-1 {
+    height: 4vh;
+    margin-right: -20px;
+}
+
+.intem-form {
+    display: flex;
+    margin: 20px;
+}
+
+.item-1 {
+    margin-top: -15px;
+}
+
+.input-item {
+    border-radius: 10px;
+    border: none;
+    height: 4vh;
+    margin-left: 10px;
+}
+
+.form-cadaluno {
+    margin-left: -50px;
+}
+
+.aprovado {
+    background-color: rgb(25, 119, 25);
+}
+
+.reprovado {
+    background-color: rgb(142, 21, 21);
+}
+
+.btn-formulario-cadaluno {
+    display: flex;
+    margin-top: 10px; /* Add margin between the buttons and the form */
+}
